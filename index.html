@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>64 Món Chay Tuyệt Đỉnh - Accnhi Food</title>
+    <meta name="description" content="Khám phá bộ sưu tập 64 sản phẩm chay thơm ngon, đậm vị từ Accnhi Food. Mua ngay trên Shopee!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('799527719_1639237381108908_5299860179477917508_n.jpg')"></div>
+            <div class="slide" style="background-image: url('812875210_1645978443768135_7285215324774820919_n.jpg')"></div>
+            <div class="slide" style="background-image: url('815799024_1650276746669452_4899892045111027215_n.jfif')"></div>
+            <div class="slide" style="background-image: url('816227582_2199152114283646_1796446933203744663_n.jfif')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Bộ Sưu Tập Mới Nhất</span>
+            <h1>64 Món Chay Tuyệt Đỉnh</h1>
+            <p>Thơm ngon, đậm vị, trọn vẹn dinh dưỡng từ thiên nhiên. <br> Khám phá ngay các sản phẩm chay nổi bật nhất của Accnhi Food!</p>
+            <a href="#products" class="btn-primary">Khám Phá Ngay <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="products" class="container">
+        <div class="section-header">
+            <h2>Danh Mục Sản Phẩm</h2>
+            <p>Click vào sản phẩm để mua chính hãng trên Shopee</p>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm món chay (VD: Chà bông, Bánh tráng, Muối...)">
+            <div class="search-suggestions">
+                <span class="suggestion-label">Gợi ý tìm nhanh:</span>
+                <button class="suggestion-tag">Chà bông nấm</button>
+                <button class="suggestion-tag">Nước chấm</button>
+                <button class="suggestion-tag">Bánh tráng</button>
+                <button class="suggestion-tag">Rong biển</button>
+            </div>
+        </div>
+        
+        <!-- Category Filters -->
+        <div class="category-filters" id="categoryFilters">
+            <button class="filter-btn active" data-category="all">Tất cả</button>
+            <button class="filter-btn" data-category="chabong">Chà bông</button>
+            <button class="filter-btn" data-category="dokho">Món giả mặn & Đồ khô</button>
+            <button class="filter-btn" data-category="giavi">Gia vị & Nước chấm</button>
+            <button class="filter-btn" data-category="anvat">Ăn vặt</button>
+        </div>
+        
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+            <!-- Rendered via JS -->
+            <div class="loading-state">Đang tải sản phẩm...</div>
+        </div>
+    </main>
+
+    <!-- Customer Reviews -->
+    <section class="reviews-section container">
+        <div class="section-header">
+            <h2>Đánh Giá Từ Khách Hàng</h2>
+            <p>Hàng ngàn đánh giá 5 sao trên Shopee là minh chứng cho chất lượng</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Chà bông nấm ăn cực kỳ ghiền! Vị vừa miệng, ăn chung với cháo trắng hay cơm nóng đều tuyệt vời. Sẽ ủng hộ shop dài dài."</p>
+                <div class="review-author">- Nguyễn Thị Hoa</div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Giao hàng siêu tốc! Đồ khô đóng gói cẩn thận, sạch sẽ. Các bé nhà mình rất thích món rong biển rắc cơm. Cực kỳ recommend!"</p>
+                <div class="review-author">- Trần Văn Nam</div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">"Mình ăn chay trường và rất khó tính trong việc chọn gia vị, nhưng nước chấm của Accnhi Food thực sự xuất sắc. Thơm, đậm đà mà không bị mặn gắt."</p>
+                <div class="review-author">- Lê Mai Chi</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="brand">
+                <h3>Accnhi Food</h3>
+                <p>Nâng tầm hương vị chay Việt.</p>
+            </div>
+            <div class="links">
+                <p>Chịu trách nhiệm về chất lượng sản phẩm: Công ty TNHH Accnhi Food.</p>
+                <p>Xuất xứ: Việt Nam.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
